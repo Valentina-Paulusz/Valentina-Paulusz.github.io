@@ -1,3 +1,7 @@
+/**********************  
+	GENERAL
+***********************/
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -11,52 +15,68 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   box-sizing: border-box;
 }
 
-html { height: 100%;
-}
+
 body { font-family: Cambria, Times New Roman, serif;
-  line-height: 1.5;
-}
-
-.vp {
-  width: 40%;
-  height: 100vh;
-  float: left;
-  text-align:center;
-  padding-top: 15%;
-  z-index: 2;
-  display: inline-block;
-  position: fixed;
-  background:  url('container-bg.jpg') #f1f1f1  repeat 50% 0;
-}
-
-.profile {
-  width: 60%;
-  height: 100vh;
-  float: right;
-  padding-top: 10%;
-  padding-right:  10%;
-  padding-left: 80px;
-  text-align: center;
-  background-color: white;
-  border-left: 2px solid #e6e6e6;
+   line-height: 1.5;
+   background:  url('container-bg.jpg') #f1f1f1 repeat 50% 0;
 }
 
 h5 {
   font-family: Cambria, Times New Roman, serif;
-  font-size: 22px;
+  font-size: 1.5em;
 }
 
 p {
   font-family: Cambria, Times New Roman, serif;
-  font-size: 18px;
+  font-size: 1.15em;
 }
+
+
+/*********************** 
+	TWO COLUMN LAYOUT
+***********************/
+
+.container-fluid {
+  background:  url('container-bg.jpg') #f1f1f1 repeat 50% 0; 
+  height: 100vh;
+}
+
+.col-sm-7 {
+height: 100vh;
+background-color: white; 
+border-left: 2px solid #e6e6e6; 
+}
+
+.profile {
+  text-align:center;  
+  padding: 15% 10% 4% 10%;
+}
+
+
+/**********************  
+	LOGO
+***********************/
+
+svg {
+  clear: both; 
+  max-width: 100%; 
+  height: auto;
+  z-index: 2;
+  padding: 0 8px 0 8px;
+  margin: 20% 10% 12%; 
+  display: block; 
+}
+
+
+/**********************  
+	ANIMATION
+***********************/
 
 .path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   	animation: dash 5s linear alternate infinite;
  <!--  animation: dash 10s linear forwards; -->
-
 }
 
 @keyframes dash {
@@ -76,6 +96,11 @@ p {
     stroke-dashoffset: 0;
 	}
 }
+
+
+/**********************  
+	LINKS
+***********************/
 
 /* unvisited link */
 a:link {
@@ -104,3 +129,5 @@ a:active {
   font-weight: bold;
   text-decoration: underline;
 }
+
+
